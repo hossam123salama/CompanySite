@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اتصل بنا | الخدمات الفنية المتكاملة</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <script defer src="js/main.js"></script>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Cairo', sans-serif;
+      color: #000;
+    }
+
+    .booking select, .booking input, .booking textarea {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .booking button {
+      background-color: #222;
+      color: #fff;
+    }
+
+    .sidebar-box {
+      background-color: #f7f7f7;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Buttons -->
+  <div id="floating-buttons-wrapper" style="position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+    <a id="toggleMessageBtn" href="javascript:void(0);" onclick="showContactButtons()" style="display: block;">
+      <img src="https://img.icons8.com/fluency/48/message-group.png" alt="Message Icon" />
+    </a>
+    <div id="contactButtons" style="display: none; flex-direction: column; gap: 10px; align-items: flex-end;">
+      <a href="tel:0575541410" target="_blank">
+        <img src="https://img.icons8.com/color/48/phone.png" alt="Call" />
+      </a>
+      <a href="https://wa.me/966575541410" target="_blank">
+        <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" />
+      </a>
+      <a href="javascript:void(0);" onclick="hideContactButtons()">
+        <img src="https://img.icons8.com/color/48/delete-sign.png" alt="Close" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+<header class="header">
+  <div class="container">
+    <h1 class="logo">الخدمات الفنية المتكاملة</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="services.html">خدماتنا</a></li>
+        <li><a href="blog.html">المقالات</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- عنوان الصفحة -->
+  <section style="padding: 40px 0; text-align: center;">
+    <h2 style="font-size: 32px;">اتصل بنا</h2>
+  </section>
+
+ 
+  <!-- Booking Section -->
+<section id="booking-form" class="booking" style="padding: 60px 0;">
+    <div class="container" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+      
+      <!-- Form -->
+
+<form action="https://formsubmit.co/hossam.222salama@gmail.com" method="POST" style="display: flex; flex-wrap: wrap; gap: 20px;">
+  <!-- إعدادات FormSubmit -->
+  <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+  <input type="hidden" name="_subject" value="🛠️ طلب حجز موعد جديد من الموقع">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_autoresponse" value="شكرًا لتواصلك معنا، تم استلام طلبك وسنقوم بالتواصل معك قريبًا.">
+
+  <!-- الحقول -->
+  <div style="flex: 1 1 45%;">
+    <label>* الاسم</label>
+    <input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc;" />
+  </div>
+
+  <div style="flex: 1 1 45%;">
+    <label>* البريد الإلكتروني</label>
+    <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc;" />
+  </div>
+
+  <div style="flex: 1 1 45%;">
+    <label>* نوع الخدمة</label>
+    <select name="service" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+      <option value="">اختر الخدمة</option>
+      <option>صيانة دورية شاملة</option>
+      <option>إصلاح الأعطال</option>
+      <option>تحسين كفاءة التكييف</option>
+      <option>الحالات الطارئة</option>
+    </select>
+  </div>
+
+  <div style="flex: 1 1 45%;">
+    <label>* التاريخ والوقت</label>
+    <input type="datetime-local" name="datetime" required style="width: 100%; padding: 10px; border: 1px solid #ccc;" />
+  </div>
+
+  <div style="flex: 1 1 100%;">
+    <label>* تفاصيل الطلب</label>
+    <textarea name="message" required style="width: 100%; padding: 10px; height: 100px; border: 1px solid #ccc;"></textarea>
+  </div>
+
+  <div style="flex: 1 1 100%; text-align: left;">
+    <button type="submit" style="padding: 10px 25px; border: none; background-color: #222; color: #fff;">احجز الآن</button>
+  </div>
+</form>
+
+
+
+
+
+
+      <!-- Sidebar -->
+      <div class="sidebar-box" style="flex: 1 1 300px; padding: 30px; border-radius: 6px;">
+        <h3>مواعيد العمل</h3>
+        <p>طوال أيام الأسبوع<br>6 صباحًا - 12 مساء</p>
+        <h3>معلومات الاتصال</h3>
+        <p>📍 المملكة العربية السعودية - المدينة المنورة</p>
+        <p>📞 0575541410</p>
+        <p>📧 technical.madac@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+
+
+<section style="padding: 40px 0; display: flex; justify-content: center; background-color: #f9f9f9;">
+  <div style="width: 80%; max-width: 1000px; border-radius: 10px; overflow: hidden;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.1093780575174!2d39.5834048758351!3d24.470379960897785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdbf292b0fa88d%3A0x1a1e33b6f34448a3!2z2YXYrNix2YPZhtivINin2YTYp9mE2YjZhtmK2Kkg2KfZhNmF2LXYqSDYp9mE2KzZitmI2KfYqQ!5e0!3m2!1sar!2ssa!4v1718888888888!5m2!1sar!2ssa" 
+      width="100%" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy"
+      aria-hidden="false" 
+      tabindex="0">
+    </iframe>
+  </div>
+</section>
+
+
+  <!-- Contact Button -->
+  <a href="https://wa.me/966000000000" class="whatsapp-btn" target="_blank">📱 تواصل معنا عبر واتساب</a>
+
+
+<!-- ======= Footer ======= -->
+<footer style="background-color: #fff; padding: 40px 0; font-family: 'Cairo', sans-serif;">
+  <div class="container" style="max-width: 1200px; margin: auto; padding: 0 20px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; text-align: right;">
+
+      <!-- تصفح الموقع -->
+      <div style="min-width: 200px;">
+        <h3>تصفح الموقع</h3>
+        <ul style="list-style: none; padding: 0; line-height: 1.8;">
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="blog.html">أخر الأخبار</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+      <!-- الخدمات -->
+      <div style="min-width: 200px;">
+        <h3>الخدمات</h3>
+        <ul style="list-style: none; padding: 0; line-height: 1.8;">
+          <li>صيانة دورية شاملة</li>
+          <li>إصلاح الأعطال</li>
+          <li>تحسين كفاءة التكييف</li>
+          <li>التقنيات والأدوات الحديثة</li>
+          <li>الحالات الطارئة</li>
+        </ul>
+      </div>
+
+      <!-- اتصل بنا -->
+      <div style="min-width: 200px;">
+        <h3>اتصل بنا</h3>
+        <p style="line-height: 1.8;">
+          جوال: <a href="tel:0575541410">0575541410</a><br>
+          إيميل: <a href="mailto:technical.madac@gmail.com">technical.madac@gmail.com</a><br>
+          العنوان:<br>
+          المملكة العربية السعودية - المدينة المنورة
+        </p>
+      </div>
+
+      <!-- سجل للاشتراك -->
+      <div style="min-width: 250px;">
+        <h3>سجل للحصول على اخر اخبارنا</h3>
+        <p>احصل على العروض والخصومات إلى صندوق البريد الوارد الخاص بك</p>
+        <form onsubmit="event.preventDefault(); alert('تم الاشتراك بنجاح!');">
+          <input type="email" placeholder="أدخل بريدك الإلكتروني" required
+            style="padding: 8px; width: 100%; max-width: 250px; border: 1px solid #ccc; border-radius: 4px;" />
+          <button type="submit"
+            style="margin-top: 10px; padding: 8px 16px; background-color: #005b96; color: white; border: none; border-radius: 4px; cursor: pointer;">اشترك</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- حقوق النشر -->
+    <div style="text-align: center; margin-top: 40px; font-size: 14px; color: #444;">
+      <p>© 2025 - فني تكييف وتبريد المدينة</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

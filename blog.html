@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المقالات | الخدمات الفنية المتكاملة</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+  <!-- Floating Buttons Container -->
+<div id="floating-buttons-wrapper" style="position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+
+  <!-- زر إظهار الأيقونات (الرسالة) -->
+  <a id="toggleMessageBtn" href="javascript:void(0);" onclick="showContactButtons()" style="display: block;">
+    <img src="https://img.icons8.com/fluency/48/message-group.png" alt="Message Icon" />
+  </a>
+
+  <!-- الأيقونات (مخفية بالبداية) -->
+  <div id="contactButtons" style="display: none; flex-direction: column; gap: 10px; align-items: flex-end;">
+
+    <a href="tel:0575541410" target="_blank">
+      <img src="https://img.icons8.com/color/48/phone.png" alt="Call" />
+    </a>
+
+    <a href="https://wa.me/966575541410" target="_blank">
+      <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" />
+    </a>
+
+    <a href="javascript:void(0);" onclick="hideContactButtons()">
+      <img src="https://img.icons8.com/color/48/delete-sign.png" alt="Close" />
+    </a>
+
+  </div>
+</div>
+</head>
+<body>
+
+ <!-- Header -->
+<header class="header">
+  <div class="container">
+    <h1 class="logo">الخدمات الفنية المتكاملة</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="services.html">خدماتنا</a></li>
+        <li><a href="blog.html">المقالات</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section class="blog">
+    <div class="container">
+      <h2>أحدث المقالات</h2>
+      <div class="blog-posts">
+        <div class="blog-post">
+          <img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=600&q=80" alt="مقال 1">
+          <h3>نصائح للحفاظ على التكييف في الصيف</h3>
+          <p>تعرف على أفضل الطرق لصيانة المكيفات قبل حلول رمضان...</p>
+          <a href="#" class="btn">اقرأ المزيد</a>
+        </div>
+        <div class="blog-post">
+          <img src="https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee?auto=format&fit=crop&w=600&q=80" alt="مقال 2">
+          <h3>أفضل الممارسات لتوفير استهلاك الكهرباء</h3>
+          <p>طرق سهلة لتقليل فاتورة الكهرباء وتحسين الأداء...</p>
+          <a href="#" class="btn">اقرأ المزيد</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/966000000000" class="whatsapp-btn" target="_blank">📱 تواصل عبر واتساب</a>
+
+<!-- ======= Footer ======= -->
+<footer style="background-color: #fff; padding: 40px 0; font-family: 'Cairo', sans-serif;">
+  <div class="container" style="max-width: 1200px; margin: auto; padding: 0 20px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; text-align: right;">
+
+      <!-- تصفح الموقع -->
+      <div style="min-width: 200px;">
+        <h3>تصفح الموقع</h3>
+        <ul style="list-style: none; padding: 0; line-height: 1.8;">
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="blog.html">أخر الأخبار</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+      <!-- الخدمات -->
+      <div style="min-width: 200px;">
+        <h3>الخدمات</h3>
+        <ul style="list-style: none; padding: 0; line-height: 1.8;">
+          <li>صيانة دورية شاملة</li>
+          <li>إصلاح الأعطال</li>
+          <li>تحسين كفاءة التكييف</li>
+          <li>التقنيات والأدوات الحديثة</li>
+          <li>الحالات الطارئة</li>
+        </ul>
+      </div>
+
+      <!-- اتصل بنا -->
+      <div style="min-width: 200px;">
+        <h3>اتصل بنا</h3>
+        <p style="line-height: 1.8;">
+          جوال: <a href="tel:0575541410">0575541410</a><br>
+          إيميل: <a href="mailto:technical.madac@gmail.com">technical.madac@gmail.com</a><br>
+          العنوان:<br>
+          المملكة العربية السعودية - المدينة المنورة
+        </p>
+      </div>
+
+      <!-- سجل للاشتراك -->
+      <div style="min-width: 250px;">
+        <h3>سجل للحصول على اخر اخبارنا</h3>
+        <p>احصل على العروض والخصومات إلى صندوق البريد الوارد الخاص بك</p>
+        <form onsubmit="event.preventDefault(); alert('تم الاشتراك بنجاح!');">
+          <input type="email" placeholder="أدخل بريدك الإلكتروني" required
+            style="padding: 8px; width: 100%; max-width: 250px; border: 1px solid #ccc; border-radius: 4px;" />
+          <button type="submit"
+            style="margin-top: 10px; padding: 8px 16px; background-color: #005b96; color: white; border: none; border-radius: 4px; cursor: pointer;">اشترك</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- حقوق النشر -->
+    <div style="text-align: center; margin-top: 40px; font-size: 14px; color: #444;">
+      <p>© 2025 - فني تكييف وتبريد المدينة</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
