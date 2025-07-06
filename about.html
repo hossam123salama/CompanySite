@@ -6,31 +6,46 @@
   <title>من نحن | الخدمات الفنية المتكاملة</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Floating Buttons Container -->
-  <div id="floating-buttons-wrapper" style="position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
-    <a id="toggleMessageBtn" href="javascript:void(0);" onclick="showContactButtons()" style="display: block;">
-      <img src="https://img.icons8.com/fluency/48/message-group.png" alt="Message Icon" />
-    </a>
-    <div id="contactButtons" style="display: none; flex-direction: column; gap: 10px; align-items: flex-end;">
-      <a href="tel:0575541410" target="_blank">
-        <img src="https://img.icons8.com/color/48/phone.png" alt="Call" />
-      </a>
-      <a href="https://wa.me/966575541410" target="_blank">
-        <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" />
-      </a>
-      <a href="javascript:void(0);" onclick="hideContactButtons()">
-        <img src="https://img.icons8.com/color/48/delete-sign.png" alt="Close" />
-      </a>
-    </div>
-  </div>
-
   <script defer src="js/main.js"></script>
 </head>
 <body>
 
+<!-- زر عائم للتواصل -->
+<div id="floating-buttons-wrapper" style="position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+  <!-- زر إظهار -->
+  <a id="toggleMessageBtn" href="javascript:void(0);" onclick="showContactButtons()" style="display: block;">
+    <img src="https://img.icons8.com/fluency/48/message-group.png" alt="Message Icon" />
+  </a>
 
- <!-- Header -->
+  <!-- أزرار التواصل -->
+  <div id="contactButtons" style="display: none; flex-direction: column; gap: 10px; align-items: flex-end;">
+    <!-- الاتصال -->
+    <a href="tel:0581760902" target="_blank" style="display: flex; align-items: center; gap: 8px; background: #fff; padding: 5px 10px; border-radius: 8px; text-decoration: none;">
+      <img src="https://img.icons8.com/color/48/phone.png" alt="Call" />
+      <span style="font-weight: bold; color: #000;">0581760902</span>
+    </a>
+    <!-- واتساب -->
+    <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدماتكم." target="_blank" style="display: flex; align-items: center; gap: 8px; background: #fff; padding: 5px 10px; border-radius: 8px; text-decoration: none;">
+      <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" />
+      <span style="font-weight: bold; color: #000;">0581760902</span>
+    </a>
+    <!-- إغلاق -->
+    <a href="javascript:void(0);" onclick="hideContactButtons()">
+      <img src="https://img.icons8.com/color/48/delete-sign.png" alt="Close" />
+    </a>
+  </div>
+</div>
+
+<script>
+  function showContactButtons() {
+    document.getElementById("contactButtons").style.display = "flex";
+  }
+  function hideContactButtons() {
+    document.getElementById("contactButtons").style.display = "none";
+  }
+</script>
+
+<!-- Header -->
 <header class="header">
   <div class="container">
     <h1 class="logo">الخدمات الفنية المتكاملة</h1>
@@ -39,45 +54,43 @@
         <li><a href="index.html">الرئيسية</a></li>
         <li><a href="about.html">من نحن</a></li>
         <li><a href="services.html">خدماتنا</a></li>
-        <li><a href="blog.html">دليلك للعناية بالتكييف
-        </a></li>
+        <li><a href="blog.html">دليلك للعناية بالتكييف</a></li>
         <li><a href="contact.html">اتصل بنا</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-  <!-- About Section -->
-  <section class="about" style="padding: 60px 20px; background-color: #f9fbfd;">
-    <div class="container" style="max-width: 900px; margin: auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);">
-      <h2 style="color: #005b96; font-size: 28px; margin-bottom: 20px; border-bottom: 2px solid #005b96; padding-bottom: 10px;">من نحن</h2>
-      <p style="line-height: 1.8; font-size: 16px; color: #444;">نحن شركة سعودية متخصصة في تقديم خدمات فنية عالية الجودة تشمل التكييف، الكهرباء، السباكة، والصيانة العامة.</p>
-  
-      <h3 style="margin-top: 30px; color: #005b96; font-size: 22px;">رؤيتنا</h3>
-      <p style="line-height: 1.8; font-size: 16px; color: #444;">أن نكون الخيار الأول لتقديم الحلول الفنية الموثوقة والاحترافية في المملكة.</p>
-  
-      <h3 style="margin-top: 30px; color: #005b96; font-size: 22px;">رسالتنا</h3>
-      <p style="line-height: 1.8; font-size: 16px; color: #444;">تقديم خدمات فنية بأعلى معايير الجودة والاحترافية لضمان رضا عملائنا.</p>
-  
-      <h3 style="margin-top: 30px; color: #005b96; font-size: 22px;">قيمنا</h3>
-      <ul style="margin-top: 15px; padding-right: 20px; color: #333; font-size: 16px; line-height: 2;">
-        <li>✔ الاحترافية والدقة</li>
-        <li>✔ الشفافية مع العملاء</li>
-        <li>✔ الالتزام بالمواعيد</li>
-        <li>✔ خدمة عملاء ممتازة</li>
-      </ul>
-    </div>
-  </section>
-  
+<!-- About Section -->
+<section class="about" style="padding: 60px 20px; background-color: #f9fbfd;">
+  <div class="container" style="max-width: 900px; margin: auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);">
+    <h2 style="color: #005b96; font-size: 28px; margin-bottom: 20px; border-bottom: 2px solid #005b96; padding-bottom: 10px;">من نحن</h2>
+    <p style="line-height: 1.8; font-size: 16px; color: #444;">نحن شركة سعودية متخصصة في تقديم خدمات فنية عالية الجودة تشمل التكييف، الكهرباء، السباكة، والصيانة العامة.</p>
 
-  <!-- Contact Button -->
-  <a href="https://wa.me/966575541410" class="whatsapp-btn" target="_blank">📱 تواصل معنا عبر واتساب</a>
-  <!-- ======= Footer ======= -->
-  <footer class="site-footer">
+    <h3 style="margin-top: 30px; color: #005b96; font-size: 22px;">رؤيتنا</h3>
+    <p style="line-height: 1.8; font-size: 16px; color: #444;">أن نكون الخيار الأول لتقديم الحلول الفنية الموثوقة والاحترافية في المملكة.</p>
+
+    <h3 style="margin-top: 30px; color: #005b96; font-size: 22px;">رسالتنا</h3>
+    <p style="line-height: 1.8; font-size: 16px; color: #444;">تقديم خدمات فنية بأعلى معايير الجودة والاحترافية لضمان رضا عملائنا.</p>
+
+    <h3 style="margin-top: 30px; color: #005b96; font-size: 22px;">قيمنا</h3>
+    <ul style="margin-top: 15px; padding-right: 20px; color: #333; font-size: 16px; line-height: 2;">
+      <li>✔ الاحترافية والدقة</li>
+      <li>✔ الشفافية مع العملاء</li>
+      <li>✔ الالتزام بالمواعيد</li>
+      <li>✔ خدمة عملاء ممتازة</li>
+    </ul>
+  </div>
+</section>
+
+<!-- زر واتساب مباشر -->
+<a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدماتكم." class="whatsapp-btn" target="_blank">📱 تواصل معنا عبر واتساب</a>
+
+<!-- Footer -->
+<footer class="site-footer">
   <div class="container">
     <div class="footer-sections">
 
-      <!-- تصفح الموقع -->
       <div class="footer-column">
         <h3>تصفح الموقع</h3>
         <ul>
@@ -88,7 +101,6 @@
         </ul>
       </div>
 
-      <!-- الخدمات -->
       <div class="footer-column">
         <h3>الخدمات</h3>
         <ul>
@@ -100,36 +112,23 @@
         </ul>
       </div>
 
-      <!-- اتصل بنا -->
       <div class="footer-column">
         <h3>اتصل بنا</h3>
         <p>
-          جوال: <a href="tel:0575541410">0575541410</a><br>
-          إيميل: <a href="mailto:technical.madac@gmail.com">technical.madac@gmail.com</a><br>
+          جوال: <a href="tel:0581760902">0581760902</a><br>
+          جوال: <a href="tel:0561744035">0561744035</a><br>
+          إيميل: <a href="mailto:qwerttrew7070qw@gmail.com">qwerttrew7070qw@gmail.com</a><br>
           العنوان:<br>
           المملكة العربية السعودية - المدينة المنورة
         </p>
       </div>
-
-      <!-- سجل للاشتراك -->
-      <div class="footer-column">
-        <h3>سجل للحصول على اخر اخبارنا</h3>
-        <p>احصل على العروض والخصومات إلى صندوق البريد الوارد الخاص بك</p>
-        <form onsubmit="event.preventDefault(); alert('تم الاشتراك بنجاح!');">
-          <input type="email" placeholder="أدخل بريدك الإلكتروني" required />
-          <button type="submit">اشترك</button>
-        </form>
-      </div>
-
     </div>
 
-    <!-- حقوق النشر -->
     <div class="copyright">
       <p>© 2025 - فني تكييف وتبريد المدينة</p>
     </div>
   </div>
 </footer>
-
 
 </body>
 </html>

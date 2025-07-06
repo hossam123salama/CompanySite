@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>الخدمات الفنية المتكاملة</title>
+  <title>مؤسسة خبرات السنين للتكييف</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="js/main.js"></script>
 
   <!-- Structured Data - Google Reviews -->
   <script type="application/ld+json">
@@ -36,25 +37,25 @@
     ]
   }
   </script>
-
-  <script defer src="js/main.js"></script>
 </head>
 <body>
 
 <!-- زر عائم للتواصل -->
 <div id="floating-buttons-wrapper" style="position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+  <!-- زر إظهار -->
   <a id="toggleMessageBtn" href="javascript:void(0);" onclick="showContactButtons()">
     <img src="https://img.icons8.com/fluency/48/message-group.png" alt="Message Icon" />
   </a>
+  <!-- أزرار التواصل -->
   <div id="contactButtons" style="display: none; flex-direction: column; gap: 10px; align-items: flex-end;">
-    <a href="tel:0575541410" target="_blank">
+    <a href="tel:0581760902" target="_blank">
       <img src="https://img.icons8.com/color/48/phone.png" alt="Call" />
     </a>
-    <a href="https://wa.me/966575541410" target="_blank">
+    <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدماتكم." target="_blank">
       <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" />
     </a>
-    <a href="https://g.page/r/CX2oA2aZ8YNEEB0/review" target="_blank">
-      <img src="https://img.icons8.com/emoji/48/star-emoji.png" alt="قيمنا" title="قيمنا على Google" />
+    <a href="https://g.page/r/CX2oA2aZ8YNEEB0/review" target="_blank" title="قيّمنا على Google">
+      <img src="https://img.icons8.com/emoji/48/star-emoji.png" alt="قيمنا" />
     </a>
     <a href="javascript:void(0);" onclick="hideContactButtons()">
       <img src="https://img.icons8.com/color/48/delete-sign.png" alt="Close" />
@@ -62,17 +63,25 @@
   </div>
 </div>
 
+<script>
+  function showContactButtons() {
+    document.getElementById("contactButtons").style.display = "flex";
+  }
+  function hideContactButtons() {
+    document.getElementById("contactButtons").style.display = "none";
+  }
+</script>
+
 <!-- Header -->
 <header class="header">
   <div class="container">
-    <h1 class="logo">الخدمات الفنية المتكاملة</h1>
+    <h1 class="logo">مؤسسة خبرات السنين للتكييف </h1>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">الرئيسية</a></li>
         <li><a href="about.html">من نحن</a></li>
         <li><a href="services.html">خدماتنا</a></li>
-        <li><a href="blog.html">دليلك للعناية بالتكييف
-        </a></li>
+        <li><a href="blog.html">دليلك للعناية بالتكييف</a></li>
         <li><a href="contact.html">اتصل بنا</a></li>
       </ul>
     </nav>
@@ -90,7 +99,6 @@
   </div>
 </section>
 
-
 <!-- About -->
 <section class="about-section">
   <div class="container">
@@ -104,69 +112,106 @@
 </section>
 
 <!-- Services -->
+<!-- Services -->
 <section class="services">
   <div class="container">
     <h2 class="section-title">خدماتنا</h2>
     <div class="service-boxes">
-   
+
       <div class="service-box">
-        <img src="Images/im1.jpg" alt="تحسين كفاءة التكييف" class="service-image" />
+        <img src="Images/im1.jpg" alt="فك وتركيب مكيفات" class="service-image" />
         <div class="icon-circle">
           <img src="https://img.icons8.com/ios-filled/50/air-conditioner.png" alt="Icon" />
         </div>
-        <h3>فك وتركيب مكيفات سبلت وكنسلت ،شباك</h3>
-        <p>تقديم استشارات ونصائح لتحسين كفاءة التكييف. توفير حلول لتوفير الطاقة دون التأثير على الأداء.</p>
+        <h3>فك وتركيب مكيفات سبلت وكنسلت</h3>
+        <p>نوفر خدمات فك وتركيب احترافية للمكيفات بجميع أنواعها مع الحرص على سلامة الأجهزة وتنظيم تمديدات النحاس بكفاءة.</p>
+        <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدمة فك وتركيب المكيفات" class="contact-now-btn" target="_blank">تواصل الآن</a>
       </div>
 
       <div class="service-box">
-        <img src="Images/im3.jpg" alt="إصلاح الأعطال" class="service-image" />
+        <img src="Images/im3.jpg" alt="توريد وتركيب" class="service-image" />
         <div class="icon-circle">
           <img src="https://img.icons8.com/ios-filled/50/air-conditioner.png" alt="Icon" />
         </div>
         <h3>توريد وتركيب</h3>
-        <p>تشخيص وإصلاح الأعطال الصغيرة والكبيرة. استبدال القطع التالفة بأخرى جديدة وأصلية.</p>
+        <p>خدمة شاملة لتوريد أجهزة التكييف عالية الجودة وتركيبها بمهنية عالية للمشاريع السكنية والتجارية.</p>
+        <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدمة التوريد والتركيب" class="contact-now-btn" target="_blank">تواصل الآن</a>
       </div>
 
       <div class="service-box">
-        <img src="Images/im4.webp" alt="إصلاح الأعطال" class="service-image" />
+        <img src="Images/im4.webp" alt="تأسيس نحاس" class="service-image" />
         <div class="icon-circle">
           <img src="https://img.icons8.com/ios-filled/50/air-conditioner.png" alt="Icon" />
         </div>
         <h3>تأسيس نحاس</h3>
-        <p>تشخيص وإصلاح الأعطال الصغيرة والكبيرة. استبدال القطع التالفة بأخرى جديدة وأصلية.</p>
+        <p>تنفيذ تمديدات نحاسية وفق المواصفات السعودية باستخدام أفضل الخامات وضمان سلامة العزل والتمديد.</p>
+        <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدمة تأسيس النحاس" class="contact-now-btn" target="_blank">تواصل الآن</a>
       </div>
 
       <div class="service-box">
-        <img src="Images/im5.webp" alt="إصلاح الأعطال" class="service-image" />
+        <img src="Images/im5.webp" alt="شباك وصيانة" class="service-image" />
         <div class="icon-circle">
           <img src="https://img.icons8.com/ios-filled/50/air-conditioner.png" alt="Icon" />
         </div>
-        <h3>وصيانه </h3>
-        <p>تشخيص وإصلاح الأعطال الصغيرة والكبيرة. استبدال القطع التالفة بأخرى جديدة وأصلية.</p>
+        <h3>شباك وصيانة</h3>
+        <p>صيانة مكيفات الشباك بكفاءة تامة تشمل تنظيف الفلاتر وفحص الكفاءة وضمان التشغيل المثالي.</p>
+        <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدمة صيانة مكيفات الشباك" class="contact-now-btn" target="_blank">تواصل الآن</a>
       </div>
 
       <div class="service-box">
-        <img src="Images/im6.webp" alt="صيانة دورية شاملة" class="service-image" />
+        <img src="Images/im6.webp" alt="أجهزة منزلية" class="service-image" />
         <div class="icon-circle">
           <img src="https://img.icons8.com/ios-filled/50/air-conditioner.png" alt="Icon" />
         </div>
-        <h3>اجهزه منزليه</h3>
-        <p>تنظيف الوحدات الداخلية والخارجية. فحص الفلاتر والأجهزة ومستوى الضغط والتبريد.</p>
+        <h3>أجهزة منزلية</h3>
+        <p>صيانة وإصلاح الأجهزة المنزلية مثل الغسالات والثلاجات وأجهزة التبريد مع ضمان قطع غيار أصلية.</p>
+        <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدمة صيانة الأجهزة المنزلية" class="contact-now-btn" target="_blank">تواصل الآن</a>
       </div>
+
+      <!-- خدمات إضافية -->
+      <div class="service-box">
+        <img src="Images/im7.jpg" alt="صيانة دورية" class="service-image" />
+        <div class="icon-circle">
+          <img src="https://img.icons8.com/ios-filled/50/air-conditioner.png" alt="Icon" />
+        </div>
+        <h3>صيانة دورية شهرية</h3>
+        <p>برامج صيانة دورية للمكيفات تشمل التنظيف والفحص واستبدال الفلاتر للحفاظ على الأداء المثالي.</p>
+        <a href="https://wa.me/966581760902?text=مرحبًا، أود الاشتراك في خدمة الصيانة الدورية" class="contact-now-btn" target="_blank">تواصل الآن</a>
+      </div>
+
+      <div class="service-box">
+        <img src="Images/im8.jpg" alt="تمديد الكهرباء" class="service-image" />
+        <div class="icon-circle">
+          <img src="https://img.icons8.com/ios-filled/50/electrical.png" alt="Icon" />
+        </div>
+        <h3>تمديد كهرباء التكييف</h3>
+        <p>نقوم بتمديد وتوصيل الكهرباء للمكيفات حسب الأحمال والتوصيلات الموصى بها في السعودية.</p>
+        <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدمة تمديد الكهرباء" class="contact-now-btn" target="_blank">تواصل الآن</a>
+      </div>
+
+      <div class="service-box">
+        <img src="Images/im9.jpg" alt="تصريف المكيفات" class="service-image" />
+        <div class="icon-circle">
+          <img src="https://img.icons8.com/ios-filled/50/water.png" alt="Icon" />
+        </div>
+        <h3>حل مشاكل تصريف المكيفات</h3>
+        <p>معالجة انسدادات مجاري التصريف أو الروائح المزعجة الناتجة عنها باستخدام معدات فعالة.</p>
+        <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدمة تصريف المكيفات" class="contact-now-btn" target="_blank">تواصل الآن</a>
+      </div>
+
     </div>
   </div>
 </section>
 
 
-<!-- Contact Button -->
-<a href="https://wa.me/966000000000" class="whatsapp-btn" target="_blank">📱 تواصل معنا عبر واتساب</a>
+
+<!-- زر واتساب مباشر -->
+<a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدماتكم." class="whatsapp-btn" target="_blank">📱 تواصل معنا عبر واتساب</a>
 
 <!-- Footer -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-sections">
-
-      <!-- تصفح الموقع -->
       <div class="footer-column">
         <h3>تصفح الموقع</h3>
         <ul>
@@ -177,7 +222,6 @@
         </ul>
       </div>
 
-      <!-- الخدمات -->
       <div class="footer-column">
         <h3>الخدمات</h3>
         <ul>
@@ -189,36 +233,23 @@
         </ul>
       </div>
 
-      <!-- اتصل بنا -->
       <div class="footer-column">
         <h3>اتصل بنا</h3>
         <p>
-          جوال: <a href="tel:0575541410">0575541410</a><br>
-          إيميل: <a href="mailto:technical.madac@gmail.com">technical.madac@gmail.com</a><br>
+          جوال: <a href="tel:0581760902">0581760902</a><br>
+          جوال: <a href="tel:0561744035">0561744035</a><br>
+          إيميل: <a href="mailto:qwerttrew7070qw@gmail.com">qwerttrew7070qw@gmail.com</a><br>
           العنوان:<br>
           المملكة العربية السعودية - المدينة المنورة
         </p>
       </div>
-
-      <!-- سجل للاشتراك -->
-      <div class="footer-column">
-        <h3>سجل للحصول على اخر اخبارنا</h3>
-        <p>احصل على العروض والخصومات إلى صندوق البريد الوارد الخاص بك</p>
-        <form onsubmit="event.preventDefault(); alert('تم الاشتراك بنجاح!');">
-          <input type="email" placeholder="أدخل بريدك الإلكتروني" required />
-          <button type="submit">اشترك</button>
-        </form>
-      </div>
-
     </div>
 
-    <!-- حقوق النشر -->
     <div class="copyright">
       <p>© 2025 - فني تكييف وتبريد المدينة</p>
     </div>
   </div>
 </footer>
-
 
 </body>
 </html>

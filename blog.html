@@ -6,35 +6,46 @@
   <title>دليلك للعناية بالتكييف | الخدمات الفنية المتكاملة</title>
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/main.js"></script>
-  <!-- Floating Buttons Container -->
-<div id="floating-buttons-wrapper" style="position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+</head>
+<body>
 
-  <!-- زر إظهار الأيقونات (الرسالة) -->
+<!-- زر عائم للتواصل -->
+<div id="floating-buttons-wrapper" style="position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+  <!-- زر إظهار -->
   <a id="toggleMessageBtn" href="javascript:void(0);" onclick="showContactButtons()" style="display: block;">
     <img src="https://img.icons8.com/fluency/48/message-group.png" alt="Message Icon" />
   </a>
 
-  <!-- الأيقونات (مخفية بالبداية) -->
+  <!-- أزرار التواصل -->
   <div id="contactButtons" style="display: none; flex-direction: column; gap: 10px; align-items: flex-end;">
-
-    <a href="tel:0575541410" target="_blank">
+    <!-- الاتصال -->
+    <a href="tel:0581760902" target="_blank" style="display: flex; align-items: center; gap: 8px; background: #fff; padding: 5px 10px; border-radius: 8px; text-decoration: none;">
       <img src="https://img.icons8.com/color/48/phone.png" alt="Call" />
+      <span style="font-weight: bold; color: #000;">0581760902</span>
     </a>
-
-    <a href="https://wa.me/966575541410" target="_blank">
+    <!-- واتساب -->
+    <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدماتكم." target="_blank" style="display: flex; align-items: center; gap: 8px; background: #fff; padding: 5px 10px; border-radius: 8px; text-decoration: none;">
       <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" />
+      <span style="font-weight: bold; color: #000;">0581760902</span>
     </a>
-
+    <!-- إغلاق -->
     <a href="javascript:void(0);" onclick="hideContactButtons()">
       <img src="https://img.icons8.com/color/48/delete-sign.png" alt="Close" />
     </a>
-
   </div>
 </div>
-</head>
-<body>
 
- <!-- Header -->
+<!-- سكربت إظهار وإخفاء الأزرار -->
+<script>
+  function showContactButtons() {
+    document.getElementById("contactButtons").style.display = "flex";
+  }
+  function hideContactButtons() {
+    document.getElementById("contactButtons").style.display = "none";
+  }
+</script>
+
+<!-- Header -->
 <header class="header">
   <div class="container">
     <h1 class="logo">الخدمات الفنية المتكاملة</h1>
@@ -43,8 +54,7 @@
         <li><a href="index.html">الرئيسية</a></li>
         <li><a href="about.html">من نحن</a></li>
         <li><a href="services.html">خدماتنا</a></li>
-        <li><a href="blog.html">  دليلك للعناية بالتكييف
-        </a></li>
+        <li><a href="blog.html">دليلك للعناية بالتكييف</a></li>
         <li><a href="contact.html">اتصل بنا</a></li>
       </ul>
     </nav>
@@ -99,14 +109,14 @@
   </div>
 </section>
 
-  <a href="https://wa.me/966000000000" class="whatsapp-btn" target="_blank">📱 تواصل معنا عبر واتساب</a>
+<!-- زر واتساب مباشر أسفل الصفحة -->
+<a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدماتكم." class="whatsapp-btn" target="_blank">📱 تواصل معنا عبر واتساب</a>
 
-<!-- ======= Footer ======= -->
+<!-- Footer -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-sections">
 
-      <!-- تصفح الموقع -->
       <div class="footer-column">
         <h3>تصفح الموقع</h3>
         <ul>
@@ -117,7 +127,6 @@
         </ul>
       </div>
 
-      <!-- الخدمات -->
       <div class="footer-column">
         <h3>الخدمات</h3>
         <ul>
@@ -129,36 +138,23 @@
         </ul>
       </div>
 
-      <!-- اتصل بنا -->
       <div class="footer-column">
         <h3>اتصل بنا</h3>
         <p>
-          جوال: <a href="tel:0575541410">0575541410</a><br>
-          إيميل: <a href="mailto:technical.madac@gmail.com">technical.madac@gmail.com</a><br>
+          جوال: <a href="tel:0581760902">0581760902</a><br>
+          جوال: <a href="tel:0561744035">0561744035</a><br>
+          إيميل: <a href="mailto:qwerttrew7070qw@gmail.com">qwerttrew7070qw@gmail.com</a><br>
           العنوان:<br>
           المملكة العربية السعودية - المدينة المنورة
         </p>
       </div>
-
-      <!-- سجل للاشتراك -->
-      <div class="footer-column">
-        <h3>سجل للحصول على اخر اخبارنا</h3>
-        <p>احصل على العروض والخصومات إلى صندوق البريد الوارد الخاص بك</p>
-        <form onsubmit="event.preventDefault(); alert('تم الاشتراك بنجاح!');">
-          <input type="email" placeholder="أدخل بريدك الإلكتروني" required />
-          <button type="submit">اشترك</button>
-        </form>
-      </div>
-
     </div>
 
-    <!-- حقوق النشر -->
     <div class="copyright">
       <p>© 2025 - فني تكييف وتبريد المدينة</p>
     </div>
   </div>
 </footer>
-
 
 </body>
 </html>
