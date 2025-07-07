@@ -3,194 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>اتصل بنا | الخدمات الفنية المتكاملة</title>
+  <title>اتصل بنا | مؤسسة خبرات السنين للتكييف</title>
+
+  <!-- Meta SEO -->
+  <meta name="description" content="تواصل معنا لحجز موعد صيانة أو تركيب تكييف في المدينة المنورة. مؤسسة خبرات السنين للتكييف توفر دعم فني سريع وجودة عالية في الخدمة.">
+  <meta name="keywords" content="اتصل بنا, صيانة التكييف, مؤسسة خبرات السنين, تركيب مكيفات, المدينة المنورة, دعم فني, خدمات التكييف, حجز موعد">
+  <link rel="canonical" href="https://your-website.com/contact.html" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "مؤسسة خبرات السنين للتكييف",
+    "image": "https://your-website.com/logo.png",
+    "telephone": "+966581760902",
+    "email": "qwerttrew7070qw@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "المدينة المنورة",
+      "addressCountry": "SA"
+    },
+    "url": "https://your-website.com/contact.html",
+    "openingHours": "Su-Sa 06:00-24:00"
+  }
+  </script>
+
+  <!-- Fonts + CSS -->
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
   <script defer src="js/main.js"></script>
   <style>
-    body {
-      background-color: #ffffff;
-      font-family: 'Cairo', sans-serif;
-      color: #000;
-    }
-
-    .booking select, .booking input, .booking textarea {
-      background-color: #fff;
-      color: #000;
-    }
-
-    .booking button {
-      background-color: #222;
-      color: #fff;
-    }
-
-    .sidebar-box {
-      background-color: #f7f7f7;
-      color: #000;
-    }
+    body { background-color: #ffffff; font-family: 'Cairo', sans-serif; color: #000; }
+    .booking select, .booking input, .booking textarea { background-color: #fff; color: #000; }
+    .booking button { background-color: #222; color: #fff; }
+    .sidebar-box { background-color: #f7f7f7; color: #000; }
   </style>
 </head>
 <body>
 
-  <!-- Floating Buttons -->
-  <div id="floating-buttons-wrapper" style="position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
-    <!-- زر إظهار الأزرار -->
-    <a id="toggleMessageBtn" href="javascript:void(0);" onclick="showContactButtons()" style="display: block;">
-      <img src="https://img.icons8.com/fluency/48/message-group.png" alt="Message Icon" />
+<!-- Floating Buttons -->
+<div id="floating-buttons-wrapper" style="position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+  <a id="toggleMessageBtn" href="javascript:void(0);" onclick="showContactButtons()">
+    <img src="https://img.icons8.com/fluency/48/message-group.png" alt="Message Icon" />
+  </a>
+  <div id="contactButtons" style="display: none; flex-direction: column; gap: 10px; align-items: flex-end;">
+    <a href="tel:0581760902" target="_blank" style="display: flex; align-items: center; gap: 8px; text-decoration: none; background: #fff; padding: 5px 10px; border-radius: 8px;">
+      <img src="https://img.icons8.com/color/48/phone.png" alt="Call" />
+      <span style="font-weight: bold; color: #000;">0581760902</span>
     </a>
+    <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدماتكم." target="_blank" style="display: flex; align-items: center; gap: 8px; text-decoration: none; background: #fff; padding: 5px 10px; border-radius: 8px;">
+      <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" />
+      <span style="font-weight: bold; color: #000;">0581760902</span>
+    </a>
+    <a href="javascript:void(0);" onclick="hideContactButtons()">
+      <img src="https://img.icons8.com/color/48/delete-sign.png" alt="Close" />
+    </a>
+  </div>
+</div>
 
-    <!-- أزرار التواصل -->
-    <div id="contactButtons" style="display: none; flex-direction: column; gap: 10px; align-items: flex-end;">
-      <!-- زر الاتصال -->
-      <a href="tel:0581760902" target="_blank" style="display: flex; align-items: center; gap: 8px; text-decoration: none; background: #fff; padding: 5px 10px; border-radius: 8px;">
-        <img src="https://img.icons8.com/color/48/phone.png" alt="Call" />
-        <span style="font-weight: bold; color: #000;">0581760902</span>
-      </a>
+<script>
+  function showContactButtons() {
+    document.getElementById("contactButtons").style.display = "flex";
+  }
+  function hideContactButtons() {
+    document.getElementById("contactButtons").style.display = "none";
+  }
+</script>
 
-      <!-- زر واتساب -->
-      <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدماتكم." target="_blank" style="display: flex; align-items: center; gap: 8px; text-decoration: none; background: #fff; padding: 5px 10px; border-radius: 8px;">
-        <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" />
-        <span style="font-weight: bold; color: #000;">0581760902</span>
-      </a>
+<header class="header">
+  <div class="container">
+    <h1 class="logo">الخدمات الفنية المتكاملة</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="services.html">خدماتنا</a></li>
+        <li><a href="blog.html">دليلك للعناية بالتكييف</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-      <!-- زر الإغلاق -->
-      <a href="javascript:void(0);" onclick="hideContactButtons()">
-        <img src="https://img.icons8.com/color/48/delete-sign.png" alt="Close" />
-      </a>
+<section style="padding: 40px 0; text-align: center;">
+  <h2 style="font-size: 32px;">اتصل بنا</h2>
+</section>
+
+<section id="booking-form" class="booking" style="padding: 60px 0;">
+  <div class="container" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+    <form action="https://formsubmit.co/hossam.222salama@gmail.com" method="POST" style="display: flex; flex-wrap: wrap; gap: 20px;">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+      <input type="hidden" name="_subject" value="🛠️ طلب حجز موعد جديد من الموقع">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="شكرًا لتواصلك معنا، تم استلام طلبك وسنقوم بالتواصل معك قريبًا.">
+
+      <div style="flex: 1 1 45%;"><label>* الاسم</label><input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc;" /></div>
+      <div style="flex: 1 1 45%;"><label>* البريد الإلكتروني</label><input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc;" /></div>
+      <div style="flex: 1 1 45%;"><label>* نوع الخدمة</label>
+        <select name="service" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+          <option value="">اختر الخدمة</option>
+          <option>صيانة دورية شاملة</option>
+          <option>إصلاح الأعطال</option>
+          <option>تحسين كفاءة التكييف</option>
+          <option>الحالات الطارئة</option>
+        </select>
+      </div>
+      <div style="flex: 1 1 45%;"><label>* التاريخ والوقت</label><input type="datetime-local" name="datetime" required style="width: 100%; padding: 10px; border: 1px solid #ccc;" /></div>
+      <div style="flex: 1 1 100%;"><label>* تفاصيل الطلب</label><textarea name="message" required style="width: 100%; padding: 10px; height: 100px; border: 1px solid #ccc;"></textarea></div>
+      <div style="flex: 1 1 100%; text-align: left;"><button type="submit" style="padding: 10px 25px; border: none;">احجز الآن</button></div>
+    </form>
+
+    <div class="sidebar-box" style="flex: 1 1 300px; padding: 30px; border-radius: 6px;">
+      <h3>مواعيد العمل</h3><p>طوال أيام الأسبوع<br>6 صباحًا - 12 مساء</p>
+      <h3>معلومات الاتصال</h3>
+      <p>📍 المملكة العربية السعودية - المدينة المنورة</p>
+      <p>📞 0581760902</p>
+      <p>📞 0561744035</p>
+      <p>📧 qwerttrew7070qw@gmail.com</p>
     </div>
   </div>
+</section>
 
-  <!-- سكربت التحكم في الإظهار والإخفاء -->
-  <script>
-    function showContactButtons() {
-      document.getElementById("contactButtons").style.display = "flex";
-    }
+<section style="padding: 40px 0; display: flex; justify-content: center; background-color: #f9f9f9;">
+  <div style="width: 80%; max-width: 1000px; border-radius: 10px; overflow: hidden;">
+    <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK_HERE" width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"></iframe>
+  </div>
+</section>
 
-    function hideContactButtons() {
-      document.getElementById("contactButtons").style.display = "none";
-    }
-  </script>
+<a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدماتكم." class="whatsapp-btn" target="_blank">📱 تواصل معنا عبر واتساب</a>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">الخدمات الفنية المتكاملة</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">الرئيسية</a></li>
-          <li><a href="about.html">من نحن</a></li>
-          <li><a href="services.html">خدماتنا</a></li>
-          <li><a href="blog.html">دليلك للعناية بالتكييف</a></li>
-          <li><a href="contact.html">اتصل بنا</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- عنوان الصفحة -->
-  <section style="padding: 40px 0; text-align: center;">
-    <h2 style="font-size: 32px;">اتصل بنا</h2>
-  </section>
-
-  <!-- Booking Section -->
-  <section id="booking-form" class="booking" style="padding: 60px 0;">
-    <div class="container" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
-
-      <!-- Form -->
-      <form action="https://formsubmit.co/hossam.222salama@gmail.com" method="POST" style="display: flex; flex-wrap: wrap; gap: 20px;">
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
-        <input type="hidden" name="_subject" value="🛠️ طلب حجز موعد جديد من الموقع">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_autoresponse" value="شكرًا لتواصلك معنا، تم استلام طلبك وسنقوم بالتواصل معك قريبًا.">
-
-        <div style="flex: 1 1 45%;">
-          <label>* الاسم</label>
-          <input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc;" />
-        </div>
-
-        <div style="flex: 1 1 45%;">
-          <label>* البريد الإلكتروني</label>
-          <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc;" />
-        </div>
-
-        <div style="flex: 1 1 45%;">
-          <label>* نوع الخدمة</label>
-          <select name="service" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
-            <option value="">اختر الخدمة</option>
-            <option>صيانة دورية شاملة</option>
-            <option>إصلاح الأعطال</option>
-            <option>تحسين كفاءة التكييف</option>
-            <option>الحالات الطارئة</option>
-          </select>
-        </div>
-
-        <div style="flex: 1 1 45%;">
-          <label>* التاريخ والوقت</label>
-          <input type="datetime-local" name="datetime" required style="width: 100%; padding: 10px; border: 1px solid #ccc;" />
-        </div>
-
-        <div style="flex: 1 1 100%;">
-          <label>* تفاصيل الطلب</label>
-          <textarea name="message" required style="width: 100%; padding: 10px; height: 100px; border: 1px solid #ccc;"></textarea>
-        </div>
-
-        <div style="flex: 1 1 100%; text-align: left;">
-          <button type="submit" style="padding: 10px 25px; border: none; background-color: #222; color: #fff;">احجز الآن</button>
-        </div>
-      </form>
-
-      <!-- Sidebar -->
-      <div class="sidebar-box" style="flex: 1 1 300px; padding: 30px; border-radius: 6px;">
-        <h3>مواعيد العمل</h3>
-        <p>طوال أيام الأسبوع<br>6 صباحًا - 12 مساء</p>
-        <h3>معلومات الاتصال</h3>
-        <p>📍 المملكة العربية السعودية - المدينة المنورة</p>
-        <p>📞 0581760902</p>
-        <p>📞 0561744035</p>
-        <p>📧 qwerttrew7070qw@gmail.com</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- خرائط جوجل -->
-  <section style="padding: 40px 0; display: flex; justify-content: center; background-color: #f9f9f9;">
-    <div style="width: 80%; max-width: 1000px; border-radius: 10px; overflow: hidden;">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.1093780575174!2d39.5834048758351!3d24.470379960897785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdbf292b0fa88d%3A0x1a1e33b6f34448a3!2z2YXYrNix2YPZhtivINin2YTYp9mE2YjZhtmK2Kkg2KfZhNmF2LXYqSDYp9mE2KzZitmI2KfYqQ!5e0!3m2!1sar!2ssa!4v1718888888888!5m2!1sar!2ssa" 
-        width="100%" 
-        height="400" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy"
-        aria-hidden="false" 
-        tabindex="0">
-      </iframe>
-    </div>
-  </section>
-
-  <!-- زر واتساب أسفل الصفحة -->
-  <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدماتكم." class="whatsapp-btn" target="_blank">📱 تواصل معنا عبر واتساب</a>
-
-  <!-- Footer -->
- <footer class="site-footer" style="background-color: #222; color: #fff; padding: 40px 0; font-family: 'Cairo', sans-serif;">
+<footer class="site-footer" style="background-color: #222; color: #fff; padding: 40px 0; font-family: 'Cairo', sans-serif;">
   <div class="container" style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
-
-    <!-- روابط الموقع -->
     <div style="flex: 1; min-width: 220px;">
-      <h3 style="color: #00d1b2; margin-bottom: 15px;">روابط سريعة</h3>
+      <h3 style="color: #00d1b2;">روابط سريعة</h3>
       <ul style="list-style: none; padding: 0;">
-        <li><a href="index.html" style="color: #ccc; text-decoration: none;">الرئيسية</a></li>
-        <li><a href="about.html" style="color: #ccc; text-decoration: none;">من نحن</a></li>
-        <li><a href="services.html" style="color: #ccc; text-decoration: none;">الخدمات</a></li>
-        <li><a href="blog.html" style="color: #ccc; text-decoration: none;">دليلك للتكييف</a></li>
-        <li><a href="contact.html" style="color: #ccc; text-decoration: none;">اتصل بنا</a></li>
+        <li><a href="index.html" style="color: #ccc;">الرئيسية</a></li>
+        <li><a href="about.html" style="color: #ccc;">من نحن</a></li>
+        <li><a href="services.html" style="color: #ccc;">الخدمات</a></li>
+        <li><a href="blog.html" style="color: #ccc;">دليلك للتكييف</a></li>
+        <li><a href="contact.html" style="color: #ccc;">اتصل بنا</a></li>
       </ul>
     </div>
-
-    <!-- خدمات مختارة -->
     <div style="flex: 1; min-width: 220px;">
-      <h3 style="color: #00d1b2; margin-bottom: 15px;">خدماتنا</h3>
+      <h3 style="color: #00d1b2;">خدماتنا</h3>
       <ul style="list-style: none; padding: 0;">
         <li style="color: #ccc;">فك وتركيب مكيفات</li>
         <li style="color: #ccc;">تأسيس نحاس وفق المواصفات</li>
@@ -199,41 +156,26 @@
         <li style="color: #ccc;">دعم فني طارئ</li>
       </ul>
     </div>
-
-    <!-- معلومات التواصل -->
     <div style="flex: 1; min-width: 220px;">
-      <h3 style="color: #00d1b2; margin-bottom: 15px;">تواصل معنا</h3>
+      <h3 style="color: #00d1b2;">تواصل معنا</h3>
       <p style="color: #ccc; line-height: 1.8;">
         📞 <a href="tel:0581760902" style="color: #ccc;">0581760902</a><br>
         📞 <a href="tel:0561744035" style="color: #ccc;">0561744035</a><br>
         📧 <a href="mailto:qwerttrew7070qw@gmail.com" style="color: #ccc;">qwerttrew7070qw@gmail.com</a><br>
         📍 المدينة المنورة، المملكة العربية السعودية
       </p>
-
-      <!-- أيقونات التواصل -->
       <div style="margin-top: 10px; display: flex; gap: 10px;">
-        <a href="https://wa.me/966581760902" target="_blank">
-          <img src="https://img.icons8.com/color/36/whatsapp--v1.png" alt="WhatsApp">
-        </a>
-        <a href="tel:0581760902" target="_blank">
-          <img src="https://img.icons8.com/color/36/phone.png" alt="Phone">
-        </a>
-        <a href="mailto:qwerttrew7070qw@gmail.com" target="_blank">
-          <img src="https://img.icons8.com/color/36/new-post.png" alt="Email">
-        </a>
-        <a href="https://g.page/r/CX2oA2aZ8YNEEB0/review" target="_blank">
-          <img src="https://img.icons8.com/emoji/36/star-emoji.png" alt="Google Review">
-        </a>
+        <a href="https://wa.me/966581760902" target="_blank"><img src="https://img.icons8.com/color/36/whatsapp--v1.png" alt="WhatsApp"></a>
+        <a href="tel:0581760902" target="_blank"><img src="https://img.icons8.com/color/36/phone.png" alt="Phone"></a>
+        <a href="mailto:qwerttrew7070qw@gmail.com" target="_blank"><img src="https://img.icons8.com/color/36/new-post.png" alt="Email"></a>
+        <a href="https://g.page/r/CX2oA2aZ8YNEEB0/review" target="_blank"><img src="https://img.icons8.com/emoji/36/star-emoji.png" alt="Google Review"></a>
       </div>
     </div>
   </div>
-
-  <!-- حقوق النشر -->
   <div style="text-align: center; color: #999; margin-top: 30px; font-size: 14px;">
     © 2025 - مؤسسة خبرات السنين للتكييف | جميع الحقوق محفوظة
   </div>
 </footer>
-
 
 </body>
 </html>

@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>خدماتنا | الخدمات الفنية المتكاملة</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Floating Buttons Container -->
-<div id="floating-buttons-wrapper" style="position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>خدمات صيانة المكيفات | مؤسسة خبرات السنين للتكييف</title>
+  
+    <meta name="description" content="مؤسسة خبرات السنين تقدم خدمات صيانة وتركيب المكيفات، تأسيس النحاس، شحن فريون، وصيانة دورية في المدينة المنورة بأعلى جودة واحترافية.">
+    <meta name="keywords" content="صيانة مكيفات, تركيب مكيفات, تأسيس نحاس, شحن فريون, المدينة المنورة, خبرات السنين للتكييف">
+    <meta name="author" content="مؤسسة خبرات السنين للتكييف" />
+  
+    <!-- Open Graph (لمشاركة الصفحة على فيسبوك وواتساب وغيره) -->
+    <meta property="og:title" content="مؤسسة خبرات السنين للتكييف | خدمات تركيب وصيانة المكيفات">
+    <meta property="og:description" content="خدمات احترافية تشمل فك وتركيب مكيفات، صيانة، شحن فريون وتأسيس نحاس مع فريق فني متخصص.">
+    <meta property="og:image" content="https://example.com/images/og-image.jpg" />
+    <meta property="og:url" content="https://example.com/services.html" />
+    <meta property="og:type" content="website" />
+  
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+  
+    <!-- خط عربي -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+  
+    <!-- Structured Data (SEO قوي لمحركات البحث) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "مؤسسة خبرات السنين للتكييف",
+      "image": "https://example.com/images/logo.png",
+      "telephone": "+966581760902",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "المدينة المنورة",
+        "addressCountry": "SA"
+      },
+      "url": "https://example.com",
+      "sameAs": [
+        "https://wa.me/966581760902"
+      ]
+    }
+    </script>
+  </head>
+  
+<body>
 
+<!-- Floating Buttons Container -->
+<div id="floating-buttons-wrapper" style="position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
   <!-- زر إظهار الأيقونات (الرسالة) -->
   <a id="toggleMessageBtn" href="javascript:void(0);" onclick="showContactButtons()" style="display: block;">
     <img src="https://img.icons8.com/fluency/48/message-group.png" alt="Message Icon" />
@@ -15,26 +59,19 @@
 
   <!-- الأيقونات (مخفية بالبداية) -->
   <div id="contactButtons" style="display: none; flex-direction: column; gap: 10px; align-items: flex-end;">
-
     <a href="tel:0581760902" target="_blank">
       <img src="https://img.icons8.com/color/48/phone.png" alt="Call" />
     </a>
-
     <a href="https://wa.me/966581760902" target="_blank">
       <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" />
     </a>
-
     <a href="javascript:void(0);" onclick="hideContactButtons()">
       <img src="https://img.icons8.com/color/48/delete-sign.png" alt="Close" />
     </a>
-
   </div>
 </div>
-  <script defer src="js/main.js"></script>
-</head>
-<body>
 
- <!-- Header -->
+<!-- Header -->
 <header class="header">
   <div class="container">
     <h1 class="logo">الخدمات الفنية المتكاملة</h1>
@@ -43,8 +80,7 @@
         <li><a href="index.html">الرئيسية</a></li>
         <li><a href="about.html">من نحن</a></li>
         <li><a href="services.html">خدماتنا</a></li>
-        <li><a href="blog.html">دليلك للعناية بالتكييف
-        </a></li>
+        <li><a href="blog.html">دليلك للعناية بالتكييف</a></li>
         <li><a href="contact.html">اتصل بنا</a></li>
       </ul>
     </nav>
@@ -128,7 +164,7 @@
 
       <!-- خدمة 6 -->
       <div class="service-box">
-        <img src="Images/im7.jpg" alt="صيانة دورية" class="service-image" />
+        <img src="Images/im7.jpg" alt="صيانة دورية" class="service-image" style="width: 100%; height: auto; max-height: 300px; object-fit: cover;" />
         <div class="icon-circle">
           <img src="https://img.icons8.com/ios-filled/50/air-conditioner.png" alt="Icon" />
         </div>
@@ -142,9 +178,9 @@
 
       <!-- خدمة 7 -->
       <div class="service-box">
-        <img src="Images/im8.jpg" alt="تمديد الكهرباء" class="service-image" />
+        <img src="Images/im8.jpg" alt="تمديد الكهرباء" class="service-image" style="width: 100%; height: auto; max-height: 300px; object-fit: cover;" />
         <div class="icon-circle">
-          <img src="https://img.icons8.com/ios-filled/50/electrical.png" alt="Icon" />
+          <img src="Images/im6.webp" alt="Icon" />
         </div>
         <h3>تمديد كهرباء التكييف</h3>
         <p>نقوم بتمديد وتوصيل الكهرباء للمكيفات حسب الأحمال والتوصيلات الموصى بها في السعودية.</p>
@@ -156,9 +192,9 @@
 
       <!-- خدمة 8 -->
       <div class="service-box">
-        <img src="Images/im9.jpg" alt="تصريف المكيفات" class="service-image" />
+        <img src="Images/im9.jpg" alt="تصريف المكيفات" class="service-image" style="width: 100%; height: auto; max-height: 300px; object-fit: cover;" />
         <div class="icon-circle">
-          <img src="https://img.icons8.com/ios-filled/50/water.png" alt="Icon" />
+          <img src="Images/im5.webp" alt="Icon" />
         </div>
         <h3>حل مشاكل تصريف المكيفات</h3>
         <p>معالجة انسدادات مجاري التصريف أو الروائح المزعجة الناتجة عنها باستخدام معدات فعالة.</p>
@@ -170,9 +206,9 @@
       </div>
 <!-- خدمة 9 -->
 <div class="service-box">
-  <img src="Images/freon.jpg" alt="شحن فريون وصيانة" class="service-image" />
+  <img src="Images/freon.jpg" alt="شحن فريون وصيانة" class="service-image" style="width: 100%; height: auto; max-height: 300px; object-fit: cover;" />
   <div class="icon-circle">
-    <img src="https://img.icons8.com/ios-filled/50/air-element.png" alt="Icon" />
+    <img src="Images/im4.webp" alt="Icon" />
   </div>
   <h3>صيانة المكيفات وشحن فريون</h3>
   <p>نوفر صيانة شاملة لجميع أنواع المكيفات (سبلت، شباك، كونسلت، دولابي) مع شحن فريون بأسعار منافسة وكشف دقيق للأعطال واستبدال القطع التالفة بأخرى أصلية.</p>
@@ -184,9 +220,9 @@
 
 <!-- خدمة 10 -->
 <div class="service-box">
-  <img src="Images/muller.jpg" alt="تأسيس نحاس مولر" class="service-image" />
+  <img src="Images/muller.jpg" alt="تأسيس نحاس مولر" class="service-image" style="width: 100%; height: auto; max-height: 300px; object-fit: cover;" />
   <div class="icon-circle">
-    <img src="https://img.icons8.com/ios-filled/50/pipeline.png" alt="Icon" />
+    <img src="Images/im3.jpg" alt="Icon" />
   </div>
   <h3>تأسيس نحاس مولر أمريكي</h3>
   <p>نقوم بتأسيس النحاس باستخدام أنابيب نحاسية أصلية من نوع مولر الأمريكي، ذات جودة عالية تضمن كفاءة التشغيل على المدى الطويل.</p>
@@ -198,9 +234,9 @@
 
 <!-- خدمة 11 -->
 <div class="service-box">
-  <img src="Images/hotel.jpg" alt="خدمات الفنادق" class="service-image" />
+  <img src="Images/hotel.jpg" alt="خدمات الفنادق" class="service-image" style="width: 100%; height: auto; max-height: 300px; object-fit: cover;" />
   <div class="icon-circle">
-    <img src="https://img.icons8.com/ios-filled/50/hotel.png" alt="Icon" />
+    <img src="Images/im5.webp" alt="Icon" />
   </div>
   <h3>عقود صيانة للفنادق والشركات</h3>
   <p>نقدم برامج صيانة شهرية وشاملة مخصصة للفنادق والشركات، تشمل التنظيف، الكشف الوقائي، إصلاح الأعطال، وضمان استمرارية الأداء بأعلى كفاءة.</p>
@@ -212,9 +248,9 @@
 
 <!-- خدمة 12 -->
 <div class="service-box">
-  <img src="Images/emergency.jpg" alt="الطوارئ والتدخل السريع" class="service-image" />
+  <img src="Images/emergency.jpg" alt="الطوارئ والتدخل السريع" class="service-image" style="width: 100%; height: auto; max-height: 300px; object-fit: cover;" />
   <div class="icon-circle">
-    <img src="https://img.icons8.com/ios-filled/50/ambulance.png" alt="Icon" />
+    <img src="Images/im12.jpg" alt="Icon" />
   </div>
   <h3>الطوارئ والتدخل السريع</h3>
   <p>فريقنا جاهز للاستجابة السريعة لحالات الأعطال الطارئة على مدار الساعة، مع توفير حلول فورية للمكيفات والتوصيلات.</p>
