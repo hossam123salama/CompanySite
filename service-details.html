@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تفاصيل الخدمة</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .service-details {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .service-details h2 {
+      color: #0a58ca;
+    }
+
+    .service-details img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .button-group {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button-group a {
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      background-color: #0a58ca;
+      transition: background-color 0.3s;
+    }
+
+    .button-group a:hover {
+      background-color: #063f94;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="service-details">
+    <h2 id="service-title">عنوان الخدمة</h2>
+    <img id="service-image" src="" alt="صورة الخدمة" />
+    <p id="service-description">وصف الخدمة سيتم تحميله تلقائيًا حسب رقم الخدمة.</p>
+
+    <div class="button-group">
+      <a id="prev-btn" href="#" class="nav-btn">السابق</a>
+      <a href="services.html" class="nav-btn">رجوع إلى جميع الخدمات</a>
+      <a id="next-btn" href="#" class="nav-btn">التالي</a>
+    </div>
+  </div>
+
+  <script>
+    const services = [
+      { id: 1, title: "فك وتركيب مكيفات سبلت وكنسلت", image: "Images/im1.jpg", description: "نوفر خدمات فك وتركيب احترافية للمكيفات بجميع أنواعها..." },
+      { id: 2, title: "توريد وتركيب", image: "Images/im3.jpg", description: "خدمة شاملة لتوريد أجهزة التكييف عالية الجودة..." },
+      { id: 3, title: "تأسيس نحاس", image: "Images/im4.webp", description: "تنفيذ تمديدات نحاسية وفق المواصفات السعودية..." },
+      { id: 4, title: "شباك وصيانة", image: "Images/im5.webp", description: "صيانة مكيفات الشباك بكفاءة تامة تشمل تنظيف الفلاتر..." },
+      { id: 5, title: "أجهزة منزلية", image: "Images/im6.webp", description: "صيانة وإصلاح الأجهزة المنزلية مثل الغسالات..." },
+      { id: 6, title: "صيانة دورية شهرية", image: "Images/im7.jpg", description: "برامج صيانة دورية للمكيفات تشمل التنظيف والفحص..." },
+      { id: 7, title: "تمديد كهرباء التكييف", image: "Images/im6.webp", description: "نقوم بتمديد وتوصيل الكهرباء للمكيفات..." },
+      { id: 8, title: "حل مشاكل تصريف المكيفات", image: "Images/im5.webp", description: "معالجة انسدادات مجاري التصريف أو الروائح المزعجة..." },
+      { id: 9, title: "صيانة المكيفات وشحن فريون", image: "Images/freon.jpg", description: "نوفر صيانة شاملة لجميع أنواع المكيفات..." },
+      { id: 10, title: "تأسيس نحاس مولر أمريكي", image: "Images/muller.jpg", description: "نقوم بتأسيس النحاس باستخدام أنابيب مولر الأمريكي..." },
+      { id: 11, title: "عقود صيانة للفنادق والشركات", image: "Images/hotel.jpg", description: "نقدم برامج صيانة شهرية وشاملة مخصصة للفنادق..." },
+      { id: 12, title: "الطوارئ والتدخل السريع", image: "Images/emergency.jpg", description: "فريقنا جاهز للاستجابة السريعة لحالات الأعطال الطارئة..." }
+    ];
+
+    const urlParams = new URLSearchParams(window.location.search);
+    let currentId = parseInt(urlParams.get("id")) || 1;
+
+    const service = services.find(s => s.id === currentId);
+
+    const title = document.getElementById("service-title");
+    const image = document.getElementById("service-image");
+    const description = document.getElementById("service-description");
+
+    if (service) {
+      title.textContent = service.title;
+      image.src = service.image;
+      description.textContent = service.description;
+    } else {
+      title.textContent = "الخدمة غير موجودة";
+      description.textContent = "عذرًا، لم يتم العثور على الخدمة المطلوبة.";
+      image.style.display = "none";
+    }
+
+    // أزرار التنقل
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+
+    if (currentId <= 1) prevBtn.style.display = "none";
+    if (currentId >= services.length) nextBtn.style.display = "none";
+
+    prevBtn.href = `service-details.html?id=${currentId - 1}`;
+    nextBtn.href = `service-details.html?id=${currentId + 1}`;
+  </script>
+</body>
+</html>
