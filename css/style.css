@@ -732,3 +732,93 @@ section {
   background-color: #0056b3;
 }
 
+/* تنسيق الهيدر */
+.custom-header {
+  background-color: #002244;
+  color: #ffffff;
+  padding: 10px 0;
+  font-family: 'Cairo', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+}
+
+.logo-texts h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+}
+
+.logo-texts p {
+  font-size: 13px;
+  margin: 0;
+  color: #00d1b2;
+}
+
+/* روابط التنقل */
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #00d1b2;
+}
+
+/* زر الهاتف */
+.toggle-btn {
+  display: none;
+  font-size: 26px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* responsive للهاتف */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .navbar.show {
+    display: flex;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+}
+

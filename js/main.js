@@ -27,3 +27,10 @@ function hideFloatingButtons() {
     document.getElementById("contactButtons").style.display = "none";
     document.getElementById("toggleMessageBtn").style.display = "block";
   }
+
+
+ 
+  function toggleNavbar() {
+    document.getElementById("navbar").classList.toggle("show");
+  }
+
