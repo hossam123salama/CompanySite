@@ -30,7 +30,11 @@ function hideFloatingButtons() {
 
 
  
+
   function toggleNavbar() {
-    document.getElementById("navbar").classList.toggle("show");
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('show');
   }
+
+
 

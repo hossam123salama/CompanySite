@@ -733,6 +733,7 @@ section {
 }
 
 /* تنسيق الهيدر */
+/* الهيدر */
 .custom-header {
   background-color: #002244;
   color: #ffffff;
@@ -820,5 +821,20 @@ section {
   .toggle-btn {
     display: block;
   }
-}
 
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-area {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar a {
+    padding: 10px 0;
+    border-bottom: 1px solid #00d1b2;
+    width: 100%;
+  }
+}
