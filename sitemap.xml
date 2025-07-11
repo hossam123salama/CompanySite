@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- الصفحة الرئيسية -->
   <url>
     <loc>https://lustrous-crostata-e8ba56.netlify.app/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- تقدر تضيف صفحات تانية هنا -->
+
+  <!-- صفحة الخدمات -->
+  <url>
+    <loc>https://lustrous-crostata-e8ba56.netlify.app/services.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- صفحة من نحن -->
+  <url>
+    <loc>https://lustrous-crostata-e8ba56.netlify.app/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- صفحة تواصل معنا -->
+  <url>
+    <loc>https://lustrous-crostata-e8ba56.netlify.app/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- صفحة تفاصيل خدمة مثال -->
+  <url>
+    <loc>https://lustrous-crostata-e8ba56.netlify.app/service-details.html?id=1</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lustrous-crostata-e8ba56.netlify.app/service-details.html?id=2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lustrous-crostata-e8ba56.netlify.app/service-details.html?id=3</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- تقدر تكرر الباقي حسب عدد الخدمات عندك -->
+
 </urlset>
