@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://lustrous-crostata-e8ba56.netlify.app/sitemap.xml
+Sitemap: https://khibrataltakyif.com/sitemap.xml
+
