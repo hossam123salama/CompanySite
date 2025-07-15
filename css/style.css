@@ -838,3 +838,13 @@ section {
     width: 100%;
   }
 }
+
+.about img:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .about div[style*="flex: 1 1 calc(33.333%"] {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
