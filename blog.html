@@ -11,6 +11,24 @@
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <script defer src="js/main.js"></script>
+  <!-- Event snippet for مشاهدة صفحة conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17358337286/KnWVCKno9vEaEIbqjNVA',
+      'value': 1.0,
+      'currency': 'EGP',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17358337286"></script>
 <script>
