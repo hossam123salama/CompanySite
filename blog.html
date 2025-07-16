@@ -43,34 +43,25 @@ function gtag_report_conversion(url) {
 
 <!-- زر عائم للتواصل -->
 <div id="floating-buttons-wrapper" style="position: fixed; right: 20px; bottom: 20px; z-index: 999; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
-  <!-- زر إظهار -->
-  <a id="toggleMessageBtn" href="javascript:void(0);" onclick="showContactButtons()" style="display: block;">
-    <img src="https://img.icons8.com/fluency/48/message-group.png" alt="Message Icon" />
-  </a>
-
-  <!-- أزرار التواصل -->
-  <div id="contactButtons" style="display: none; flex-direction: column; gap: 10px; align-items: flex-end;">
-    <!-- الاتصال -->
-    <a href="tel:0581760902" target="_blank" style="display: flex; align-items: center; gap: 8px; background: #fff; padding: 5px 10px; border-radius: 8px; text-decoration: none;">
-      <img src="https://img.icons8.com/color/48/phone.png" alt="Call" />
-      <span style="font-weight: bold; color: #000;">0581760902</span>
-    </a>
-  
-   
-    <!-- إغلاق -->
-    <a href="javascript:void(0);" onclick="hideContactButtons()">
-      <img src="https://img.icons8.com/color/48/delete-sign.png" alt="Close" />
-    </a>
+  <!-- زر إظهار الرسالة -->
+  <button id="toggleMessageBtn" onclick="showContactBubble()" style="background: #00c4a7; border: none; border-radius: 50%; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.10); cursor: pointer; transition: background 0.2s;">
+    <img src="https://img.icons8.com/fluency/48/message-group.png" alt="Message Icon" style="width: 28px; height: 28px;" />
+  </button>
+  <!-- نافذة رقم الهاتف -->
+  <div id="contactBubble" style="display: none; background: #fff; color: #222; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.13); padding: 18px 22px 14px 18px; min-width: 180px; align-items: center; gap: 10px; position: absolute; bottom: 60px; right: 0;">
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <img src="https://img.icons8.com/color/32/phone.png" alt="Call" style="width: 24px; height: 24px;" />
+      <a href="tel:0581760902" style="font-weight: bold; color: #00c4a7; font-size: 17px; text-decoration: none;">0581760902</a>
+    </div>
+    <button onclick="hideContactBubble()" style="background: #eee; border: none; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; position: absolute; top: 7px; left: 7px; cursor: pointer; transition: background 0.2s;"><img src="https://img.icons8.com/color/24/delete-sign.png" alt="Close" style="width: 18px; height: 18px;" /></button>
   </div>
 </div>
-
-<!-- سكربت إظهار وإخفاء الأزرار -->
 <script>
-  function showContactButtons() {
-    document.getElementById("contactButtons").style.display = "flex";
+  function showContactBubble() {
+    document.getElementById("contactBubble").style.display = "flex";
   }
-  function hideContactButtons() {
-    document.getElementById("contactButtons").style.display = "none";
+  function hideContactBubble() {
+    document.getElementById("contactBubble").style.display = "none";
   }
 </script>
 
@@ -146,54 +137,44 @@ function gtag_report_conversion(url) {
 <a href="https://wa.me/966581760902?text=مرحبًا، أود الاستفسار عن خدماتكم." class="whatsapp-btn" target="_blank">📱 تواصل معنا عبر واتساب</a>
 
 <!-- Footer -->
-
-<!-- Footer -->
-<footer class="site-footer" style="background-color: #1e1e1e; color: #f0f0f0; padding: 20px 0; font-family: 'Cairo', sans-serif; font-size: 14px;">
-  <div class="container" style="max-width: 1000px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 25px;">
-    
-    <!-- Quick Links -->
-    <div style="flex: 1; min-width: 200px;">
-      <h4 style="color: #00c4a7; margin-bottom: 10px; font-size: 16px;">روابط سريعة</h4>
-      <ul style="list-style: none; padding: 0; margin: 0;">
-        <li><a href="index.html" style="color: #ddd; text-decoration: none; margin-bottom: 5px; display: block;">الرئيسية</a></li>
-        <li><a href="about.html" style="color: #ddd; text-decoration: none; margin-bottom: 5px; display: block;">من نحن</a></li>
-        <li><a href="services.html" style="color: #ddd; text-decoration: none; margin-bottom: 5px; display: block;">الخدمات</a></li>
-        <li><a href="blog.html" style="color: #ddd; text-decoration: none; margin-bottom: 5px; display: block;">دليلك للتكييف</a></li>
-        <li><a href="contact.html" style="color: #ddd; text-decoration: none; margin-bottom: 5px; display: block;">اتصل بنا</a></li>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-col">
+      <h4>روابط سريعة</h4>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="blog.html">دليلك للتكييف</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
       </ul>
     </div>
-
-    <!-- Services -->
-    <div style="flex: 1; min-width: 200px;">
-      <h4 style="color: #00c4a7; margin-bottom: 10px; font-size: 16px;">خدماتنا</h4>
-      <ul style="list-style: none; padding: 0; margin: 0;">
-        <li style="color: #ddd; margin-bottom: 5px;">غسيل مكيفات</li>
-        <li style="color: #ddd; margin-bottom: 5px;">فك وتركيب</li>
-        <li style="color: #ddd; margin-bottom: 5px;">توريد وتركيب</li>
-        <li style="color: #ddd; margin-bottom: 5px;">صيانة</li>
-        <li style="color: #ddd; margin-bottom: 5px;">شحن فريون</li>
+    <div class="footer-col">
+      <h4>خدماتنا</h4>
+      <ul>
+        <li>غسيل مكيفات</li>
+        <li>فك وتركيب</li>
+        <li>توريد وتركيب</li>
+        <li>صيانة</li>
+        <li>شحن فريون</li>
       </ul>
     </div>
-
-    <!-- Contact -->
-    <div style="flex: 1; min-width: 220px;">
-      <h4 style="color: #00c4a7; margin-bottom: 10px; font-size: 16px;">تواصل معنا</h4>
-      <p style="color: #ddd; margin: 0 0 10px; line-height: 1.7;">
-        📞 <a href="tel:0581760902" style="color: #ddd;">0581760902</a><br>
-        📞 <a href="tel:0561744035" style="color: #ddd;">0561744035</a><br>
-        📧 <a href="mailto:hafezmahmoud938@gmail.com" style="color: #ddd;">hafezmahmoud938@gmail.com</a><br>
+    <div class="footer-col footer-contact">
+      <h4>تواصل معنا</h4>
+      <p>
+        📞 <a href="tel:0581760902">0581760902</a><br>
+        📞 <a href="tel:0561744035">0561744035</a><br>
+        📧 <a href="mailto:hafezmahmoud938@gmail.com">hafezmahmoud938@gmail.com</a><br>
         📍 المدينة المنورة، العزيزية
       </p>
-      <div style="display: flex; gap: 8px;">
+      <div class="footer-social">
         <a href="https://wa.me/966581760902" target="_blank"><img src="https://img.icons8.com/color/28/whatsapp--v1.png" alt="WhatsApp" /></a>
         <a href="tel:0581760902" target="_blank"><img src="https://img.icons8.com/color/28/phone.png" alt="Phone" /></a>
         <a href="mailto:hafezmahmoud938@gmail.com" target="_blank"><img src="https://img.icons8.com/color/28/new-post.png" alt="Email" /></a>
       </div>
     </div>
   </div>
-
-  <!-- Copyright -->
-  <div style="text-align: center; color: #aaa; margin-top: 12px; font-size: 12px;">
+  <div class="footer-bottom">
     © 2025 - مؤسسة خبرات السنين للتكييف | جميع الحقوق محفوظة
   </div>
 </footer>
