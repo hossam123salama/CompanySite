@@ -12,12 +12,141 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <script defer src="js/main.js"></script>
 
-
-
-
-
-
-
+  <style>
+    /* تحسينات خاصة بالموبايل */
+    @media (max-width: 768px) {
+      .tips-section .container,
+      .when-tech-section .container,
+      .choose-company-section .container,
+      .faq-section .container {
+        padding: 0 15px !important;
+      }
+      
+      .tips-section h2,
+      .when-tech-section h2,
+      .choose-company-section h2,
+      .faq-section h2 {
+        font-size: 1.8rem !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
+      }
+      
+      .tips-section ul,
+      .when-tech-section ul,
+      .choose-company-section ul {
+        font-size: 16px !important;
+        line-height: 1.9 !important;
+        padding-right: 10px !important;
+      }
+      
+      .tips-section .container,
+      .when-tech-section .container {
+        flex-direction: column !important;
+        gap: 25px !important;
+      }
+      
+      .tips-section img,
+      .when-tech-section img {
+        max-width: 250px !important;
+        margin: 0 auto !important;
+      }
+      
+      .faq-list {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+      }
+      
+      .faq-item {
+        padding: 20px !important;
+        border-radius: 12px !important;
+      }
+      
+      .faq-item h4 {
+        font-size: 1rem !important;
+      }
+      
+      .faq-item p {
+        font-size: 15px !important;
+        line-height: 1.8 !important;
+      }
+      
+      .faq-item img {
+        width: 32px !important;
+        height: 32px !important;
+      }
+      
+      .tips-section,
+      .when-tech-section,
+      .choose-company-section,
+      .faq-section {
+        padding: 30px 0 20px 0 !important;
+      }
+      
+      /* تحسين الأزرار في الموبايل */
+      .button-group {
+        flex-direction: row !important;
+        gap: 8px !important;
+        flex-wrap: wrap !important;
+      }
+      
+      .button-group a {
+        flex: 1 1 auto !important;
+        min-width: 80px !important;
+        text-align: center !important;
+        padding: 10px 12px !important;
+        font-size: 14px !important;
+        white-space: nowrap !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .tips-section h2,
+      .when-tech-section h2,
+      .choose-company-section h2,
+      .faq-section h2 {
+        font-size: 1.6rem !important;
+      }
+      
+      .tips-section ul,
+      .when-tech-section ul,
+      .choose-company-section ul {
+        font-size: 15px !important;
+        line-height: 1.8 !important;
+      }
+      
+      .faq-item {
+        padding: 18px !important;
+      }
+      
+      .faq-item h4 {
+        font-size: 0.95rem !important;
+      }
+      
+      .faq-item p {
+        font-size: 14px !important;
+      }
+      
+      .tips-section img,
+      .when-tech-section img {
+        max-width: 220px !important;
+      }
+      
+      .button-group {
+        flex-direction: row !important;
+        gap: 6px !important;
+        flex-wrap: wrap !important;
+      }
+      
+      .button-group a {
+        flex: 1 1 auto !important;
+        min-width: 70px !important;
+        text-align: center !important;
+        padding: 8px 10px !important;
+        font-size: 13px !important;
+        white-space: nowrap !important;
+      }
+    }
+  </style>
   <!-- Event snippet for مشاهدة صفحة conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
@@ -99,44 +228,94 @@ function gtag_report_conversion(url) {
   <p>نصائح مهمة للحفاظ على أداء أفضل وتوفير أكثر!</p>
 </header>
 
-<section>
-  <div class="section">
-    <h2>🛠️ الصيانة الدورية</h2>
-    <ul>
-      <li>تنظيف الفلاتر كل أسبوعين</li>
-      <li>فحص مستوى الفريون</li>
-      <li>التأكد من التوصيلات الكهربائية</li>
+<!-- قسم نصائح ذهبية مع صورة -->
+<section class="tips-section" style="background:#f9f9f9;padding:40px 0 30px 0;">
+  <div class="container" style="display:flex;flex-wrap:wrap;align-items:center;gap:40px;max-width:1100px;margin:auto;padding:0 20px;">
+    <div style="flex:2;min-width:260px;">
+      <h2 style="color:#00c4a7;font-size:2.1rem;margin-bottom:18px;text-align:center;">نصائح ذهبية لصيانة وغسيل المكيفات</h2>
+      <ul style="font-size:18px;line-height:2.1;margin-bottom:0;padding-right:15px;">
+        <li>احرص على <b>غسيل المكيفات</b> وتنظيف الفلاتر كل شهرين على الأقل.</li>
+        <li>قم بعمل <b>صيانة التكييف</b> الدورية لتفادي الأعطال المفاجئة.</li>
+        <li>تأكد من شحن الفريون وفحص التوصيلات الكهربائية.</li>
+        <li>لا تتردد في طلب <b>شركة صيانة مكيفات</b> معتمدة عند ظهور أي مشكلة.</li>
+        <li>استفد من <b>عروض غسيل مكيفات</b> الموسمية لتوفير التكاليف.</li>
     </ul>
-    <div class="tip">تجاهل الصيانة = ضعف تبريد + استهلاك كهرباء زائد</div>
+    </div>
+    <div style="flex:1;min-width:220px;text-align:center;">
+      <img src="Images/im1.jpg" alt="نصائح صيانة المكيفات" style="width:100%;max-width:270px;border-radius:18px;box-shadow:0 4px 18px rgba(0,0,0,0.13);">
+    </div>
   </div>
+</section>
 
-  <div class="section">
-    <h2>⚡ ترشيد استهلاك الكهرباء</h2>
-    <ul>
-      <li>ضبط درجة الحرارة على 24-26</li>
-      <li>غلق الأبواب والنوافذ</li>
-      <li>استخدام الستائر لعزل الحرارة</li>
+<!-- متى تحتاج فني محترف -->
+<section class="when-tech-section" style="padding:40px 0 30px 0;">
+  <div class="container" style="max-width:900px;margin:auto;padding:0 20px;">
+    <h2 style="color:#00c4a7;font-size:2rem;margin-bottom:18px;text-align:center;">متى تحتاج إلى فني صيانة مكيفات محترف؟</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:30px;align-items:center;">
+      <div style="flex:2;min-width:220px;">
+        <ul style="font-size:18px;line-height:2.1;padding-right:15px;">
+          <li>سماع صوت غير طبيعي من المكيف أو اهتزازات.</li>
+          <li>تسريب مياه أو ضعف التبريد رغم الإعدادات السليمة.</li>
+          <li>ظهور روائح كريهة أو تراكم غبار داخل الجهاز.</li>
+          <li>الحاجة إلى <b>فك وتركيب المكيف</b> عند الانتقال أو الصيانة الشاملة.</li>
+          <li>الرغبة في الاستفادة من <b>عروض غسيل المكيفات</b> أو <b>إصلاح مكيفات</b> باحترافية.</li>
     </ul>
-    <div class="tip">قد توفّر هذه الخطوات 30% من استهلاك الكهرباء</div>
+      </div>
+      <div style="flex:1;min-width:180px;text-align:center;">
+        <img src="Images/im12.jpg" alt="فني صيانة مكيفات" style="width:100%;max-width:200px;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,0.13);">
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="section">
-    <h2>🌀 الاستخدام الصحيح</h2>
-    <ul>
-      <li>تشغيل التكييف قبل النوم بـ10 دقائق</li>
-      <li>عدم تشغيله طوال اليوم</li>
-      <li>عدم تشغيله مع فتح الباب</li>
+<!-- كيف تختار شركة صيانة مكيفات -->
+<section class="choose-company-section" style="background:#f5f5f5;padding:40px 0 30px 0;">
+  <div class="container" style="max-width:900px;margin:auto;padding:0 20px;">
+    <h2 style="color:#00c4a7;font-size:2rem;margin-bottom:18px;text-align:center;">كيف تختار شركة صيانة مكيفات موثوقة؟</h2>
+    <ul style="font-size:18px;line-height:2.1;padding-right:15px;">
+      <li>تأكد من وجود سجل تجاري ورخصة مزاولة.</li>
+      <li>اسأل عن الضمان على خدمات <b>صيانة وغسيل مكيفات</b> وقطع الغيار.</li>
+      <li>اطلع على تقييمات العملاء وتجاربهم مع <b>شركة غسيل مكيفات</b> أو <b>شركة فك وتركيب مكيفات</b>.</li>
+      <li>اختر شركة تقدم <b>عروض غسيل مكيفات</b> وخدمات شاملة (صيانة، إصلاح، فك وتركيب).</li>
+      <li>تأكد من سرعة الاستجابة وخدمة العملاء.</li>
     </ul>
   </div>
+</section>
 
-  <div class="section">
-    <h2>📅 متى تحتاج لفني محترف؟</h2>
-    <ul>
-      <li>صوت غير طبيعي من التكييف</li>
-      <li>تسريب مياه</li>
-      <li>ضعف التبريد رغم الإعدادات السليمة</li>
-    </ul>
-   
+<!-- قسم الأسئلة الشائعة (FAQ) بشكل احترافي -->
+<section class="faq-section" style="padding:50px 0 30px 0;">
+  <div class="container" style="max-width:950px;margin:auto;padding:0 20px;">
+    <h2 style="text-align:center;color:#00c4a7;font-size:2.1rem;margin-bottom:36px;letter-spacing:0.5px;">الأسئلة الشائعة حول صيانة وغسيل المكيفات</h2>
+    <div class="faq-list" style="display:grid;grid-template-columns:1fr 1fr;gap:36px;">
+      <div class="faq-item" style="background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.10);padding:28px;transition:box-shadow 0.2s;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;"><img src="Images/im3.jpg" alt="غسيل المكيفات" style="width:38px;height:38px;object-fit:cover;border-radius:10px;"> <h4 style="color:#222;margin:0;font-size:1.1rem;">ما الفرق بين <b>غسيل المكيفات</b> و <b>صيانة المكيفات</b>؟</h4></div>
+        <p style="font-size:17px;line-height:2;">غسيل المكيفات يركز على تنظيف الفلاتر والمراوح والهيكل الداخلي لإزالة الأتربة والبكتيريا، بينما تشمل صيانة المكيفات فحص شامل للأجزاء الكهربائية والميكانيكية، شحن الفريون، وإصلاح الأعطال. ننصح بعمل <b>صيانة وغسيل مكيفات</b> بشكل دوري للحفاظ على كفاءة التبريد ونقاء الهواء.</p>
+      </div>
+      <div class="faq-item" style="background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.10);padding:28px;transition:box-shadow 0.2s;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;"><img src="Images/img5.webp" alt="فك وتركيب المكيف" style="width:38px;height:38px;object-fit:cover;border-radius:10px;"> <h4 style="color:#222;margin:0;font-size:1.1rem;">متى أحتاج إلى <b>فك وتركيب المكيف</b>؟</h4></div>
+        <p style="font-size:17px;line-height:2;">تحتاج إلى <b>فك وتركيب المكيف</b> عند الانتقال لمنزل جديد، أو عند إجراء صيانة شاملة أو إصلاحات كبيرة. نحن في <b>شركة فك وتركيب مكيفات</b> نوفر لك خدمة احترافية وآمنة مع ضمان على العمل.</p>
+      </div>
+      <div class="faq-item" style="background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.10);padding:28px;transition:box-shadow 0.2s;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;"><img src="Images/im8.webp" alt="عروض غسيل المكيفات" style="width:38px;height:38px;object-fit:cover;border-radius:10px;"> <h4 style="color:#222;margin:0;font-size:1.1rem;">ما هي <b>عروض غسيل المكيفات</b> المتوفرة لديكم؟</h4></div>
+        <p style="font-size:17px;line-height:2;">نقدم <b>عروض غسيل مكيفات</b> موسمية بأسعار تنافسية، تشمل غسيل أكثر من مكيف في نفس الموقع، مع خصومات خاصة للعملاء الجدد. تواصل معنا لمعرفة أحدث <b>عروض غسيل المكيفات</b> في المدينة المنورة.</p>
+      </div>
+      <div class="faq-item" style="background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.10);padding:28px;transition:box-shadow 0.2s;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;"><img src="Images/im10.webp" alt="شركة صيانة مكيفات" style="width:38px;height:38px;object-fit:cover;border-radius:10px;"> <h4 style="color:#222;margin:0;font-size:1.1rem;">لماذا أختار <b>شركة صيانة مكيفات</b> متخصصة؟</h4></div>
+        <p style="font-size:17px;line-height:2;">اختيار شركة متخصصة مثلنا يضمن لك جودة الخدمة، استخدام قطع غيار أصلية، فنيين معتمدين، وضمان على جميع أعمال <b>صيانة وتركيب المكيفات</b> و <b>إصلاح المكيفات</b>. هدفنا رضاك التام وسلامة أجهزتك.</p>
+      </div>
+      <div class="faq-item" style="background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.10);padding:28px;transition:box-shadow 0.2s;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;"><img src="Images/im12.webp" alt="عروض غسيل مكيفات" style="width:38px;height:38px;object-fit:cover;border-radius:10px;"> <h4 style="color:#222;margin:0;font-size:1.1rem;">هل تقدمون <b>عروض غسيل مكيفات</b> دورية؟</h4></div>
+        <p style="font-size:17px;line-height:2;">نعم، لدينا <b>عروض غسيل مكيفات</b> دورية وخاصة في المواسم الحارة، ونوفر خصومات عند غسيل أكثر من مكيف في نفس الموقع.</p>
+      </div>
+      <div class="faq-item" style="background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.10);padding:28px;transition:box-shadow 0.2s;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;"><img src="Images/im14.webp" alt="إصلاح مكيفات" style="width:38px;height:38px;object-fit:cover;border-radius:10px;"> <h4 style="color:#222;margin:0;font-size:1.1rem;">هل تشمل خدماتكم <b>إصلاح جميع أنواع المكيفات</b>؟</h4></div>
+        <p style="font-size:17px;line-height:2;">نعم، نحن <b>شركة صيانة مكيفات</b> معتمدة ونقدم خدمات <b>إصلاح مكيفات</b> لجميع الأنواع والماركات، مع ضمان على قطع الغيار والعمل.</p>
+      </div>
+      <div class="faq-item" style="background:#fff;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,0.10);padding:28px;transition:box-shadow 0.2s;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;"><img src="Images/im15.webp" alt="نظافة المكيفات" style="width:38px;height:38px;object-fit:cover;border-radius:10px;"> <h4 style="color:#222;margin:0;font-size:1.1rem;">ما أهمية <b>نظافة المكيفات</b> بشكل دوري؟</h4></div>
+        <p style="font-size:17px;line-height:2;">الحفاظ على <b>نظافة المكيفات</b> يضمن جودة الهواء داخل المنزل ويقلل من استهلاك الكهرباء ويطيل عمر الجهاز. ننصح بعمل <b>غسيل المكيفات</b> مرتين سنويًا على الأقل.</p>
+      </div>
+    </div>
   </div>
 </section>
 
