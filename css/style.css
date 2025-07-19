@@ -1512,6 +1512,35 @@ section {
 }
 
 @media (max-width: 700px) {
+  .site-footer .container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 18px !important;
+  }
+  .site-footer .container > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin-bottom: 12px !important;
+    text-align: center !important;
+  }
+  .site-footer .container > div:last-child {
+    margin-bottom: 0 !important;
+  }
+  .site-footer .container ul,
+  .site-footer .container p {
+    text-align: center !important;
+  }
+  .site-footer .container div[style*="display: flex"] {
+    justify-content: center !important;
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+  }
+  .site-footer .container img {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 700px) {
   .site-footer {
     background: #23272f !important;
     color: #f0f0f0 !important;
